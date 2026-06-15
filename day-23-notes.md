@@ -19,3 +19,4 @@ Upstream = Original repository from which a fork was created.
 Fetch downloads changes only.
 Pull downloads and merges changes.
 This line was added from github website.
+This change was made directly on github.
