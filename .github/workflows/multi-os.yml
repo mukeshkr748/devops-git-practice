@@ -20,6 +20,15 @@ jobs:
       - name: Check Docker Version
         run: docker --version
 
+      - name: Check Python Version
+        run: python3 --version
+
+      - name: Check Node Version
+        run: node --version
+
+      - name: Check Git Version
+        run: git --version
+
   windows:
     runs-on: windows-latest
 
@@ -45,5 +54,3 @@ jobs:
 
       - name: Current User
         run: whoami
-
-     
