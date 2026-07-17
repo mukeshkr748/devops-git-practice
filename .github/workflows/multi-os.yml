@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
 
 jobs:
-
   ubuntu:
     runs-on: ubuntu-latest
 
@@ -17,13 +16,14 @@ jobs:
 
       - name: Current User
         run: whoami
+
       - name: Check Docker Version
         run: docker --version
-      windows:
-       runs-on: windows-latest
 
+  windows:
+    runs-on: windows-latest
 
-   steps:
+    steps:
       - name: Print OS
         run: systeminfo
 
@@ -45,3 +45,5 @@ jobs:
 
       - name: Current User
         run: whoami
+
+     
