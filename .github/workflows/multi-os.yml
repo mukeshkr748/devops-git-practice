@@ -1,0 +1,45 @@
+name: Multi OS Runner
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print OS
+        run: uname -a
+
+      - name: Print Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
+
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Print OS
+        run: systeminfo
+
+      - name: Print Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
+
+  mac:
+    runs-on: macos-latest
+
+    steps:
+      - name: Print OS
+        run: uname -a
+
+      - name: Print Hostname
+        run: hostname
+
+      - name: Current User
+        run: whoami
